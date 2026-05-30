@@ -1,0 +1,22 @@
+{
+  "name": "everyday-economy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Map-first economic dashboard for everyday cost-of-living signals.",
+  "scripts": {
+    "dev": "pnpm --filter @everyday-economy/web dev",
+    "dev:web": "pnpm --filter @everyday-economy/web dev",
+    "build": "pnpm --filter @everyday-economy/web build",
+    "build:web": "pnpm --filter @everyday-economy/web build",
+    "lint": "pnpm --filter @everyday-economy/web lint",
+    "test": "pnpm --filter @everyday-economy/web test && PYTHONPATH=apps/api .venv/bin/python -m pytest -q apps/api",
+    "test:web": "pnpm --filter @everyday-economy/web test",
+    "test:api": "PYTHONPATH=apps/api .venv/bin/python -m pytest -q apps/api",
+    "api": ".venv/bin/python -m uvicorn app.main:app --reload --app-dir apps/api --port 8000",
+    "docker:api": "docker build -t everyday-economy-api:local apps/api"
+  },
+  "packageManager": "pnpm@10.0.0",
+  "engines": {
+    "node": ">=22"
+  }
+}

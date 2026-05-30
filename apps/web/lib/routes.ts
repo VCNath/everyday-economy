@@ -1,0 +1,22 @@
+export const routes = {
+  landing: "/",
+  dashboard: "/dashboard",
+  map: "/map",
+  leaderboards: "/leaderboards",
+  compare: "/compare",
+  basket: "/basket",
+  regions: "/regions",
+  insights: "/insights",
+  sources: "/data/sources",
+  methodology: "/data/methodology",
+  apiStatus: "/data/api-status",
+  login: "/auth/login",
+  signup: "/auth/signup",
+  profile: "/account/profile",
+  savedRegions: "/account/saved-regions",
+  alerts: "/account/alerts",
+  notifications: "/account/notifications",
+  reports: "/account/reports",
+  preferences: "/account/preferences",
+  billing: "/account/billing"
+} as const;

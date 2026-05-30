@@ -1,0 +1,11 @@
+{
+  "name": "@everyday-economy/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./types": "./types.ts",
+    "./indicators": "./indicators.ts",
+    "./locations": "./locations.ts"
+  }
+}
